@@ -1,0 +1,25 @@
+<div class="row">
+    <div class="col-12">
+        <main class="home__container">
+            <div class="home__wrapper">
+                <div class="home__imageLogo">
+                    <img src="./assets/images/logo-principal.png" alt="">
+                </div>
+                <div class="home__info">
+                    <span class="home__title">¡Bienvenido a nuestro Sistema de Ventas!</span>
+                    <p class="home__description">
+                        Ahora podrá recargar la comunicación de su empresa y/o hogar al instante. Realice una recarga, elija el paquete de su preferencia y obtenga minutos, megas, SMS y redes sociales de manera rápida y sencilla para mantenerse comunicado.
+                    </p>
+                </div>
+                <span class="home__textCardIntro">Elige la operación a realizar:</span>
+                <div class="card__container">
+                    <div class="row  card__wrapper">
+                        <div class="col-12 col-lg-4" *ngFor="let catalogue of catalogueList">
+                            <app-home-card [catalogue]="catalogue"></app-home-card>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<div class="row header__container">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-9 mx-auto">
+                <header class="header">
+                    <div class="header__content">
+                        <div>
+                            <img src="./assets/images/logo-secondary.png" alt="Bocky Call Logo" width="200">
+                        </div>
+                        <div *ngIf="showButton">
+                            <button (click)="goToHome()" class="btn btn-light">
+                                <i class=" header__icon fa-solid fa-house"></i>
+                                Ir a Home
+                            </button>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+    </div>
+</div>

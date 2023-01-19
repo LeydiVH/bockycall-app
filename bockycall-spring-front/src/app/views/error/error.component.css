@@ -1,0 +1,44 @@
+.error__container {
+    height: calc(100vh - var(--header-size));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.message__container--description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+.catalogue__titleContainer {
+    margin: 0 0 3rem 0;
+}
+
+.catalogue__title {
+    color: var(--white-2);
+    letter-spacing: 1px;
+}
+
+.message__interjection {
+    font: var(--body-bold-24);
+}
+
+.message__info {
+    font: var(--body-regular-24);
+    color: var(--white-1);
+}
+
+.message__description {
+    font: var(--body-regular-16);
+}
+
+.message__imageContainer {
+    text-align: center;
+}
+
+.message__image {
+    width: 80%;
+}

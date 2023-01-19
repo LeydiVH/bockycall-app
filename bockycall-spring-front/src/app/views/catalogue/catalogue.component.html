@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-12">
+        <div class="row">
+            <div class="col-9 mx-auto">
+                <div class="row">
+                    <h2 class="catalogue__title">CATÁLOGO: {{catalogue.catalogueName}}</h2>
+                </div>
+                <div class="row package__container">
+                    <div class="col-12">
+                        <h5 class="package__info">Seleccione el paquete de su preferencia.</h5>
+                    </div>
+                    <div class="col-12 mx-auto">
+                        <div class="row" *ngIf="catalogue.id === 1">
+                            <div class="col-6 col-md-4 col-lg-3" *ngFor="let recharge of rechargeList">
+                                <app-product-card [item]="recharge" (selectedITem)="getSelectedItem($event)"></app-product-card>
+                            </div>
+                        </div>
+                        <div class="row" *ngIf="catalogue.id === 2">
+                            <div class="col-6 col-md-4 col-lg-3" *ngFor="let internet of internetList">
+                                <app-product-card [item]="internet" (selectedITem)="getSelectedItem($event)"></app-product-card>
+                            </div>
+                        </div>
+                        <div class="row" *ngIf="catalogue.id === 3">
+                            <div class="col-6 col-md-4 col-lg-3" *ngFor="let socialNetwork of socialNetworkList">
+                                <app-product-card [item]="socialNetwork" (selectedITem)="getSelectedItem($event)"></app-product-card>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-product-detail [item]="selectedItem"></app-product-detail> 

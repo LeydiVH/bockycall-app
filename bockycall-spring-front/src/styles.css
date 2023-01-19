@@ -1,0 +1,45 @@
+:root {
+    --black: #000000;
+    --purple-1: #5b48a1;
+    --purple-2: #3c2c63;
+    --purple-3: #342c6c;
+    --purple-4: #2b234c;
+    --purple-5: #17132a;
+    --purple-6: #1c1c34;
+    --purple-7: #140c1c;
+    --purple-8: #040405;
+    --white-1: #FFFFFF;
+    --white-2: #E9EBED;
+    --bs-font-sans-serif: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --body-bold-36: 700 2.25rem/1.5rem var(--bs-font-sans-serif);
+    --body-regular-36: 400 2.25rem/1.5rem var(--bs-font-sans-serif);
+    --body-bold-24: 600 1.5rem/1.5rem var(--bs-font-sans-serif);
+    --body-regular-24: 400 1.5rem/1.5rem var(--bs-font-sans-serif);
+    --body-regular-18: 400 1.125rem/1.5rem var(--bs-font-sans-serif);
+    --body-bold-18: 700 1.125rem/1.5rem var(--bs-font-sans-serif);
+    --body-regular-16: 400 1rem/1.5rem var(--bs-font-sans-serif);
+    --body-bold-16: 700 1rem/1.5rem var(--bs-font-sans-serif);
+    --body-regular-14: 400 .875rem/1.5rem var(--bs-font-sans-serif);
+    --body-bold-14: 600 .875rem/1.5rem var(--bs-font-sans-serif);
+    --caption-regular-12: 400 .75rem/1.5rem var(--bs-font-sans-serif);
+    --caption-bold-12: 600 .75rem/1.5rem var(--bs-font-sans-serif);
+    --caption-regular-10: 400 .625rem/1.5rem var(--bs-font-sans-serif);
+
+    --header-size: 80px;
+
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.body {
+    background-image: url('./assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--white-1);
+    font: var(--body-regular-16);
+    min-height: 100vh;
+}

@@ -1,0 +1,8 @@
+<div class="container-fluid">
+  <header *ngIf="showHeader">
+    <app-header [showButton]="showButton"></app-header>
+  </header>
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+</div>

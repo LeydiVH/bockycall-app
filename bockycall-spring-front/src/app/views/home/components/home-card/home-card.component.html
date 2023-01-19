@@ -1,0 +1,16 @@
+<div class="card card__content">
+    <div class="card__iconContainer">
+        <div class="card__iconWrapper">
+            <i [class]="'card__icon ' + catalogue.icon" [class.card__icon--two]="catalogue.id === 2"></i>
+        </div>
+    </div>
+    <div class="card-body card__body">
+        <div class="card__infoContainer">
+            <h5 class="card-title">{{catalogue.catalogueName}}</h5>
+            <p class="card-text">{{catalogue.description}}</p>
+        </div>
+        <div class="card__buttonContainer">
+            <a (click)="goToCataloguePage()" class="btn btn-dark btn-block">COMPRAR</a>
+        </div>
+      </div>                                
+</div>

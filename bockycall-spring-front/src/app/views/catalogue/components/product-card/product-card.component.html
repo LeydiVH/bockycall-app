@@ -1,0 +1,21 @@
+<div class="card card__container">
+    <div class="card__imageContainer">
+        <img class="card__image card-img" [src]="item.image"
+            alt="Package image" width="100">
+    </div>
+    <div class="card-body card__body">
+        <div class="card__infoContainer">
+            <h5 class="card-title card__title">Vigencia</h5>
+            <p class="card-text card__text">{{item.expiration}} días</p>
+        </div>
+        <div class="card__linkContainer">
+            <a class="card-link card__link" (click)="setSelectedItem()" data-toggle="modal" data-target="#productInfoModal">Ver más</a>
+        </div>
+
+    </div>
+    <div class="card-body card__buttonContainer">
+        <div class="card__buttonWrapper">
+            <a class="btn btn-dark btn-block">COMPRAR</a>
+        </div>
+    </div>
+</div>

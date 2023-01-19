@@ -1,0 +1,23 @@
+server:
+  port: 8084
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      default-zone: http://localhost:8761/eureka
+    instance:
+      hostname: localhost
+spring:
+  application:
+    name: catalogue-service
+  datasource:
+    url: jdbc:mysql://u9mffcv8cewfcxdn:xcnwPCwJRG5NdsoXY0j1@bn3bcwlryljgqrat7jjp-mysql.services.clever-cloud.com:3306/bn3bcwlryljgqrat7jjp
+    username: u9mffcv8cewfcxdn
+    password: xcnwPCwJRG5NdsoXY0j1
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+  jpa: 
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
